@@ -1,0 +1,23 @@
+<h3>{{title}}</h3>
+<div> 
+   Today's date :- {{presentDate | date: 'fullDate' }}
+</div>
+<p>Hello World!</p>
+<p [ngStyle]="{'color': 'blue', 'font-size': '14px'}"> 
+   paragraph style is applied using ngStyle 
+</p>
+<p>
+   The addition is: {{c}}  
+</p>
+<p>
+   The Factorial is: {{z}}
+</p>
+<p>
+   The Greater is: {{w}} 
+</p>
+<h3>{{ title }}</h3>
+<app-child-component [(val)]="user"></app-child-component> 
+<p>Hello {{ user }}!</p>
+<p>
+   <app-register-form />
+</p>
